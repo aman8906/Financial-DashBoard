@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://financial-dashboard-lrnp.onrender.com/api",
 });
 
 /* ================= AUTH ================= */
@@ -12,8 +12,6 @@ export const loginUser = (data) => {
 
 /* ================= USER DATA ================= */
 
-// Always use userId (client101 type)
-
 export const getPortfolio = (userId) => {
   return API.get(`/data/portfolio/${userId}`);
 };
@@ -22,7 +20,7 @@ export const getOrders = (userId) => {
   return API.get(`/data/orders/${userId}`);
 };
 
-/* ================= REALTIME (OPTIONAL FALLBACK) ================= */
+/* ================= REALTIME ================= */
 
 export const getRealtimeData = (userId) => {
   return API.get(`/data/realtime/${userId}`);
