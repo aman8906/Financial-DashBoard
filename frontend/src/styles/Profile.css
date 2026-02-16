@@ -1,0 +1,59 @@
+.profile-sidebar {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 250px;
+  background: #111; /* dark background */
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  overflow: hidden;
+  z-index: 100;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-info {
+  background-color: #28a745;/* green highlight */
+  padding: 15px;
+  text-align: left;
+}
+
+.user-info p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.user-info span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+.user-info:hover{
+    background: #0d6efd;
+
+}
+
+.profile-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-btn {
+  padding: 12px 15px;
+  text-align: left;
+  border: none;
+  background: none;
+  color: #f44336; /* red text */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option-btn:hover {
+  background: #0d6efd;
+}
+
+.logout-btn {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-weight: 600;
+}
